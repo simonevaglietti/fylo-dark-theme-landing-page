@@ -1,0 +1,490 @@
+body {
+  background-color: #1c2431;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+
+.bg-desktop {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.bg-mobile {
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.primary-btn {
+  background: linear-gradient(45deg, #65e2d9, #339ecc);
+  color: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+#container {
+  color: #ececec;
+}
+
+#header {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+li a {
+  color: #dbd9d9;
+  font-size: 15px;
+  text-decoration: none;
+}
+li a:hover {
+  background: linear-gradient(45deg, #65e2d9, #339ecc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo:hover .path-logo {
+  fill: url(#gradient-dark);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar {
+  width: 200px;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#intro-content {
+  position: relative;
+}
+
+#intro {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+#intro .intro-illustration {
+  margin: 30px 0 40px;
+  width: 500px;
+}
+#intro .title {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#intro .paragraph {
+  max-width: 500px;
+  margin: 0 auto;
+}
+#intro .primary-btn {
+  width: 200px;
+  height: 40px;
+  margin: 26px auto 0;
+}
+
+#main {
+  background-color: #181f2a;
+  padding-top: 100px;
+  padding-bottom: 300px;
+  position: relative;
+}
+
+#info {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 370px 370px;
+  grid-template-rows: 200px 200px;
+  grid-gap: 40px;
+  margin-bottom: 100px;
+}
+#info .info-box {
+  display: grid;
+  grid-template-rows: 95px 27px 75px;
+}
+#info .info-box .info-box-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+#info .info-box .paragraph {
+  line-height: 1.3;
+  font-size: 14px;
+}
+#info .info-box svg {
+  margin: 0 auto;
+}
+
+#info-2 {
+  margin: 0 60px 70px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 50% 50%;
+}
+#info-2 .illustration-info-2 {
+  width: 480px;
+  margin: 0 auto;
+}
+#info-2 .text-info-2 {
+  padding: 30px;
+}
+#info-2 .text-info-2 .title {
+  margin: 60px 0 15px;
+}
+#info-2 .text-info-2 .paragraph {
+  margin: 15px 0;
+}
+#info-2 .text-info-2 .link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 30px;
+  cursor: pointer;
+}
+#info-2 .text-info-2 .link .link-text {
+  display: block;
+  margin: 25px 0;
+  color: #65e2d9;
+  text-decoration: none;
+}
+#info-2 .text-info-2 .link .link-text::after {
+  content: "";
+  width: 166px;
+  background: #65e2d9;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 0.5px;
+}
+#info-2 .text-info-2 .link .link-icon {
+  transform: translateY(7%);
+  margin: 0 5px;
+  color: #65e2d9;
+}
+
+#testimonials {
+  position: relative;
+  margin: 150px 60px 0;
+  display: flex;
+  justify-content: space-between;
+}
+#testimonials .quotes {
+  position: absolute;
+  top: -40px;
+  left: -15px;
+  z-index: 0;
+}
+#testimonials .testimonial {
+  position: relative;
+  z-index: 1;
+  margin: 0 13px;
+  background: #202a3c;
+}
+#testimonials .testimonial .paragraph {
+  font-size: 14px;
+  padding: 30px 20px 15px;
+}
+#testimonials .testimonial .testimonial-info {
+  display: flex;
+  align-items: center;
+  padding: 0 20px 20px;
+}
+#testimonials .testimonial .image {
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#testimonials .testimonial .testimonial-name {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+#testimonials .testimonial .testimonial-title {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+#signup-box {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  width: 700px;
+  background: #1c2431;
+  padding: 35px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: -90px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#signup-box .title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+#signup-box .paragraph {
+  margin-bottom: 10px;
+}
+#signup-box .signup-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+#signup-box .signup-form .mail {
+  width: 320px;
+  height: 35px;
+  border-radius: 18px;
+  border: 0;
+  padding-left: 20px;
+}
+#signup-box .signup-form .primary-btn {
+  width: 190px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+#footer {
+  background: #0b1523;
+  padding: 170px 30px 60px;
+}
+#footer .footer-logo {
+  width: 150px;
+}
+#footer .footer-content {
+  display: flex;
+  margin: 40px 0 0;
+  justify-content: space-between;
+}
+#footer .footer-content .footer-content-1 {
+  display: flex;
+  align-items: baseline;
+  width: 400px;
+}
+#footer .footer-content .footer-content-1 .location {
+  transform: translate(0, 9px);
+  margin-right: 24px;
+}
+#footer .footer-content .footer-content-2 .phone {
+  margin-bottom: 16px;
+}
+#footer .footer-content .footer-content-2 img {
+  margin-right: 15px;
+}
+#footer .footer-content li {
+  margin-bottom: 15px;
+}
+#footer .footer-content .footer-content-5 {
+  display: flex;
+}
+#footer .footer-content .footer-content-5 div {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+@media (max-width: 900px) {
+  #intro .intro-illustration {
+    width: 450px;
+  }
+  #intro .title {
+    padding: 0 10px;
+  }
+  #intro .paragraph {
+    padding: 0 15px;
+  }
+
+  #main {
+    padding-bottom: 190px;
+  }
+
+  #info {
+    grid-template-columns: 370px;
+  }
+
+  #info-2 {
+    grid-template-columns: 100%;
+    grid-template-rows: 340px 320px;
+  }
+  #info-2 .illustration-info-2 {
+    width: 400px;
+  }
+  #info-2 .text-info-2 {
+    padding: 0;
+  }
+  #info-2 .text-info-2 .title {
+    margin: 0 0 15px;
+  }
+
+  #testimonials {
+    flex-direction: column;
+    margin: 130px 60px;
+  }
+  #testimonials .testimonial {
+    margin: 15px 0;
+  }
+
+  #signup-box {
+    width: 550px;
+  }
+
+  #footer .footer-content {
+    flex-direction: column;
+  }
+  #footer .footer-content > div {
+    margin: 10px 0;
+  }
+  #footer .footer-content .footer-content-2 {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 700px) {
+  #signup-box {
+    width: 450px;
+  }
+}
+@media (max-width: 500px) {
+  #header {
+    margin: 20px 2px;
+  }
+  #header .header-logo {
+    height: 31px;
+    width: 140px;
+  }
+  #header .header-logo g {
+    transform: scale(0.6);
+  }
+  #header .navbar li {
+    margin: 0 2px;
+  }
+
+  #intro .intro-illustration {
+    width: 340px;
+  }
+  #intro .title {
+    font-size: 30px;
+    padding: 0 7px;
+  }
+  #intro .paragraph {
+    font-size: 15px;
+    padding: 0 30px;
+  }
+
+  #background .bg-desktop {
+    display: none;
+  }
+  #background .bg-mobile {
+    display: block;
+  }
+
+  #main {
+    padding-bottom: 310px;
+  }
+
+  #info {
+    grid-template-columns: 280px;
+  }
+
+  #info-2 {
+    grid-template-rows: 240px 320px;
+    margin: 0 30px;
+    grid-gap: 30px;
+  }
+  #info-2 .illustration-info-2 {
+    width: 300px;
+  }
+  #info-2 .text-info-2 .title {
+    font-size: 18px;
+  }
+  #info-2 .text-info-2 .paragraph {
+    font-size: 14px;
+  }
+  #info-2 .text-info-2 .link {
+    font-size: 14px;
+  }
+  #info-2 .text-info-2 .link .link-text::after {
+    width: 148px;
+  }
+
+  #testimonials {
+    margin: 110px 60px;
+  }
+
+  #signup-box {
+    width: 300px;
+  }
+  #signup-box .title {
+    font-size: 25px;
+  }
+  #signup-box .signup-form {
+    flex-direction: column;
+  }
+  #signup-box .signup-form .mail {
+    margin-bottom: 15px;
+    height: 45px;
+    border-radius: 29px;
+    width: 270px;
+  }
+  #signup-box .signup-form .primary-btn {
+    height: 45px;
+    width: 300px;
+  }
+}
+@media (max-width: 350px) {
+  #header {
+    padding: 10px 15px;
+  }
+  #header .header-logo {
+    width: 130px;
+  }
+  #header .navbar a {
+    font-size: 14px;
+  }
+
+  #intro .intro-illustration {
+    width: 300px;
+  }
+  #intro .title {
+    margin: 0 7px 25px;
+  }
+
+  #info-2 {
+    grid-gap: 30px;
+  }
+  #info-2 .illustration-info-2 {
+    width: 280px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
