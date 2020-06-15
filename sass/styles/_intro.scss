@@ -1,0 +1,28 @@
+#intro-content {
+  position: relative;
+}
+
+#intro {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  .intro-illustration {
+    margin: 30px 0 40px;
+    width: 500px;
+  }
+  .title {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .paragraph {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .primary-btn {
+    width: 200px;
+    height: 40px;
+    margin: 26px auto 0;
+  }
+}
