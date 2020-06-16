@@ -4,18 +4,52 @@
   grid-gap: 20px;
   grid-template-columns: 50% 50%;
 
+  @include responsive(tablet) {
+    grid-template-columns: 100%;
+    grid-template-rows: 340px 320px;
+  }
+  @include responsive(phone) {
+    grid-template-rows: 240px 320px;
+    margin: 0 30px;
+    grid-gap: 30px;
+  }
+  @include responsive(small-phone) {
+    grid-gap: 30px;
+  }
+
   .illustration-info-2 {
     width: 480px;
     margin: 0 auto;
+    @include responsive(tablet) {
+      width: 400px;
+    }
+    @include responsive(phone) {
+      width: 300px;
+    }
+    @include responsive(small-phone) {
+      width: 280px;
+    }
   }
 
   .text-info-2 {
     padding: 30px;
+    @include responsive(tablet) {
+      padding: 0;
+    }
     .title {
       margin: 60px 0 15px;
+      @include responsive(tablet) {
+        margin: 0 0 15px;
+      }
+      @include responsive(phone) {
+        font-size: 18px;
+      }
     }
     .paragraph {
       margin: 15px 0;
+      @include responsive(phone) {
+        font-size: 14px;
+      }
     }
 
     .link {
@@ -24,6 +58,9 @@
       position: relative;
       height: 30px;
       cursor: pointer;
+      @include responsive(phone) {
+        font-size: 14px;
+      }
       .link-text {
         display: block;
         margin: 25px 0;
@@ -38,6 +75,9 @@
         left: 0;
         position: absolute;
         height: 0.5px;
+        @include responsive(phone) {
+          width: 148px;
+        }
       }
       .link-icon {
         transform: translateY(7%);

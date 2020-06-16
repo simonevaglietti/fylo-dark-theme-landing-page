@@ -451,19 +451,28 @@ body {
   color: #ececec;
 }
 
-.bg-desktop {
+#background .bg-desktop {
   position: absolute;
   bottom: 0;
   width: 100%;
   z-index: 0;
 }
-
-.bg-mobile {
+@media only screen and (max-width: 500px) {
+  #background .bg-desktop {
+    display: none;
+  }
+}
+#background .bg-mobile {
   display: none;
   width: 100%;
   position: absolute;
   bottom: 0;
   z-index: 0;
+}
+@media only screen and (max-width: 500px) {
+  #background .bg-mobile {
+    display: block;
+  }
 }
 
 .title {
@@ -533,12 +542,48 @@ li a:hover {
   padding: 10px 20px;
   align-items: center;
 }
+@media only screen and (max-width: 500px) {
+  #header {
+    margin: 20px 2px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #header {
+    padding: 10px 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #header .header-logo {
+    height: 31px;
+    width: 140px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #header .header-logo {
+    width: 130px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #header .header-logo g {
+    transform: scale(0.6);
+  }
+}
 #header .navbar {
   width: 200px;
 }
 #header .navbar ul {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 700px) {
+  #header .navbar ul li {
+    margin: 0 2px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #header .navbar ul li a {
+    font-size: 12px;
+  }
 }
 
 #intro-content {
@@ -556,13 +601,55 @@ li a:hover {
   margin: 30px 0 40px;
   width: 500px;
 }
+@media only screen and (max-width: 900px) {
+  #intro .intro-illustration {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #intro .intro-illustration {
+    width: 340px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #intro .intro-illustration {
+    width: 300px;
+  }
+}
 #intro .title {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 25px;
+}
+@media only screen and (max-width: 900px) {
+  #intro .title {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #intro .title {
+    font-size: 30px;
+    padding: 0 7px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #intro .title {
+    margin: 0 7px 25px;
+  }
 }
 #intro .paragraph {
   max-width: 500px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 900px) {
+  #intro .paragraph {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #intro .paragraph {
+    font-size: 15px;
+    padding: 0 30px;
+  }
 }
 #intro .primary-btn {
   width: 200px;
@@ -578,6 +665,16 @@ li a:hover {
   grid-template-rows: 200px 200px;
   grid-gap: 40px;
   margin-bottom: 100px;
+}
+@media only screen and (max-width: 900px) {
+  #info {
+    grid-template-columns: 370px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #info {
+    grid-template-columns: 280px;
+  }
 }
 #info .info-box {
   display: grid;
@@ -601,18 +698,71 @@ li a:hover {
   grid-gap: 20px;
   grid-template-columns: 50% 50%;
 }
+@media only screen and (max-width: 900px) {
+  #info-2 {
+    grid-template-columns: 100%;
+    grid-template-rows: 340px 320px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #info-2 {
+    grid-template-rows: 240px 320px;
+    margin: 0 30px;
+    grid-gap: 30px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #info-2 {
+    grid-gap: 30px;
+  }
+}
 #info-2 .illustration-info-2 {
   width: 480px;
   margin: 0 auto;
 }
+@media only screen and (max-width: 900px) {
+  #info-2 .illustration-info-2 {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #info-2 .illustration-info-2 {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #info-2 .illustration-info-2 {
+    width: 280px;
+  }
+}
 #info-2 .text-info-2 {
   padding: 30px;
+}
+@media only screen and (max-width: 900px) {
+  #info-2 .text-info-2 {
+    padding: 0;
+  }
 }
 #info-2 .text-info-2 .title {
   margin: 60px 0 15px;
 }
+@media only screen and (max-width: 900px) {
+  #info-2 .text-info-2 .title {
+    margin: 0 0 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #info-2 .text-info-2 .title {
+    font-size: 18px;
+  }
+}
 #info-2 .text-info-2 .paragraph {
   margin: 15px 0;
+}
+@media only screen and (max-width: 500px) {
+  #info-2 .text-info-2 .paragraph {
+    font-size: 14px;
+  }
 }
 #info-2 .text-info-2 .link {
   display: flex;
@@ -620,6 +770,11 @@ li a:hover {
   position: relative;
   height: 30px;
   cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+  #info-2 .text-info-2 .link {
+    font-size: 14px;
+  }
 }
 #info-2 .text-info-2 .link .link-text {
   display: block;
@@ -636,6 +791,11 @@ li a:hover {
   position: absolute;
   height: 0.5px;
 }
+@media only screen and (max-width: 500px) {
+  #info-2 .text-info-2 .link .link-text::after {
+    width: 148px;
+  }
+}
 #info-2 .text-info-2 .link .link-icon {
   transform: translateY(7%);
   margin: 0 5px;
@@ -648,6 +808,17 @@ li a:hover {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 900px) {
+  #testimonials {
+    flex-direction: column;
+    margin: 130px 60px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #testimonials {
+    margin: 110px 60px;
+  }
+}
 #testimonials .quotes {
   position: absolute;
   top: -40px;
@@ -659,6 +830,11 @@ li a:hover {
   z-index: 1;
   margin: 0 13px;
   background: #202a3c;
+}
+@media only screen and (max-width: 900px) {
+  #testimonials .testimonial {
+    margin: 15px 0;
+  }
 }
 #testimonials .testimonial .paragraph {
   font-size: 14px;
@@ -697,11 +873,38 @@ li a:hover {
   left: 50%;
   transform: translate(-50%, 0);
 }
+@media only screen and (max-width: 900px) {
+  #signup-box {
+    width: 550px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #signup-box {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #signup-box {
+    width: 280px;
+    padding: 35px 27px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #signup-box {
+    padding: 20px 10px;
+    width: 270px;
+  }
+}
 #signup-box .title {
   font-weight: 700;
   font-size: 30px;
   line-height: 1.3;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 500px) {
+  #signup-box .title {
+    font-size: 23px;
+  }
 }
 #signup-box .paragraph {
   margin-bottom: 10px;
@@ -712,6 +915,11 @@ li a:hover {
   align-items: center;
   margin-top: 24px;
 }
+@media only screen and (max-width: 500px) {
+  #signup-box .signup-form {
+    flex-direction: column;
+  }
+}
 #signup-box .signup-form .mail {
   width: 320px;
   height: 35px;
@@ -719,10 +927,34 @@ li a:hover {
   border: 0;
   padding-left: 20px;
 }
+@media only screen and (max-width: 500px) {
+  #signup-box .signup-form .mail {
+    margin-bottom: 15px;
+    height: 45px;
+    border-radius: 29px;
+    width: 270px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #signup-box .signup-form .mail {
+    width: 240px;
+  }
+}
 #signup-box .signup-form .primary-btn {
   width: 230px;
   height: 40px;
   margin: 0 20px;
+}
+@media only screen and (max-width: 500px) {
+  #signup-box .signup-form .primary-btn {
+    height: 45px;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #signup-box .signup-form .primary-btn {
+    width: 260px;
+  }
 }
 
 #main {
@@ -730,6 +962,16 @@ li a:hover {
   padding-top: 100px;
   padding-bottom: 300px;
   position: relative;
+}
+@media only screen and (max-width: 900px) {
+  #main {
+    padding-bottom: 190px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #main {
+    padding-bottom: 310px;
+  }
 }
 
 #footer {
@@ -746,6 +988,16 @@ li a:hover {
   margin: 40px 0 0;
   justify-content: space-between;
 }
+@media only screen and (max-width: 900px) {
+  #footer .footer-content {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #footer .footer-content div {
+    margin: 10px 0;
+  }
+}
 #footer .footer-content .footer-content-1 {
   display: flex;
   align-items: baseline;
@@ -754,6 +1006,11 @@ li a:hover {
 #footer .footer-content .footer-content-1 .location {
   transform: translate(0, 9px);
   margin-right: 24px;
+}
+@media only screen and (max-width: 900px) {
+  #footer .footer-content .footer-content-2 {
+    margin-bottom: 40px;
+  }
 }
 #footer .footer-content .footer-content-2 .phone {
   margin-bottom: 16px;
@@ -781,6 +1038,12 @@ li a:hover {
   transform: translate(-50%, 0);
   font-size: 13px;
 }
+@media only screen and (max-width: 350px) {
+  #footer .challenge {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 #footer .challenge div {
   margin: 0 3px;
 }
@@ -788,196 +1051,6 @@ li a:hover {
   background: linear-gradient(45deg, #65e2d9, #339ecc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-@media (max-width: 900px) {
-  #intro .intro-illustration {
-    width: 450px;
-  }
-  #intro .title {
-    padding: 0 10px;
-  }
-  #intro .paragraph {
-    padding: 0 15px;
-  }
-
-  #main {
-    padding-bottom: 190px;
-  }
-
-  #info {
-    grid-template-columns: 370px;
-  }
-
-  #info-2 {
-    grid-template-columns: 100%;
-    grid-template-rows: 340px 320px;
-  }
-  #info-2 .illustration-info-2 {
-    width: 400px;
-  }
-  #info-2 .text-info-2 {
-    padding: 0;
-  }
-  #info-2 .text-info-2 .title {
-    margin: 0 0 15px;
-  }
-
-  #testimonials {
-    flex-direction: column;
-    margin: 130px 60px;
-  }
-  #testimonials .testimonial {
-    margin: 15px 0;
-  }
-
-  #signup-box {
-    width: 550px;
-  }
-
-  #footer .footer-content {
-    flex-direction: column;
-  }
-  #footer .footer-content > div {
-    margin: 10px 0;
-  }
-  #footer .footer-content .footer-content-2 {
-    margin-bottom: 40px;
-  }
-}
-@media (max-width: 700px) {
-  #signup-box {
-    width: 450px;
-  }
-}
-@media (max-width: 500px) {
-  #header {
-    margin: 20px 2px;
-  }
-  #header .header-logo {
-    height: 31px;
-    width: 140px;
-  }
-  #header .header-logo g {
-    transform: scale(0.6);
-  }
-  #header .navbar li {
-    margin: 0 2px;
-  }
-
-  #intro .intro-illustration {
-    width: 340px;
-  }
-  #intro .title {
-    font-size: 30px;
-    padding: 0 7px;
-  }
-  #intro .paragraph {
-    font-size: 15px;
-    padding: 0 30px;
-  }
-
-  #background .bg-desktop {
-    display: none;
-  }
-  #background .bg-mobile {
-    display: block;
-  }
-
-  #main {
-    padding-bottom: 310px;
-  }
-
-  #info {
-    grid-template-columns: 280px;
-  }
-
-  #info-2 {
-    grid-template-rows: 240px 320px;
-    margin: 0 30px;
-    grid-gap: 30px;
-  }
-  #info-2 .illustration-info-2 {
-    width: 300px;
-  }
-  #info-2 .text-info-2 .title {
-    font-size: 18px;
-  }
-  #info-2 .text-info-2 .paragraph {
-    font-size: 14px;
-  }
-  #info-2 .text-info-2 .link {
-    font-size: 14px;
-  }
-  #info-2 .text-info-2 .link .link-text::after {
-    width: 148px;
-  }
-
-  #testimonials {
-    margin: 110px 60px;
-  }
-
-  #signup-box {
-    width: 280px;
-    padding: 35px 27px;
-  }
-  #signup-box .title {
-    font-size: 23px;
-  }
-  #signup-box .signup-form {
-    flex-direction: column;
-  }
-  #signup-box .signup-form .mail {
-    margin-bottom: 15px;
-    height: 45px;
-    border-radius: 29px;
-    width: 270px;
-  }
-  #signup-box .signup-form .primary-btn {
-    height: 45px;
-    width: 300px;
-  }
-}
-@media (max-width: 350px) {
-  #header {
-    padding: 10px 15px;
-  }
-  #header .header-logo {
-    width: 130px;
-  }
-  #header .navbar a {
-    font-size: 14px;
-  }
-
-  #intro .intro-illustration {
-    width: 300px;
-  }
-  #intro .title {
-    margin: 0 7px 25px;
-  }
-
-  #info-2 {
-    grid-gap: 30px;
-  }
-  #info-2 .illustration-info-2 {
-    width: 280px;
-  }
-
-  #signup-box {
-    padding: 20px 10px;
-    width: 270px;
-  }
-  #signup-box .signup-form .mail {
-    width: 240px;
-  }
-  #signup-box .signup-form .primary-btn {
-    width: 260px;
-  }
-
-  #footer .challenge {
-    flex-direction: column;
-    text-align: center;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

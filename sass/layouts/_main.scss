@@ -1,0 +1,18 @@
+@import './main/info';
+@import './main/info2';
+@import './main/testimonials';
+@import './main/signup-box';
+
+#main {
+  background-color: hsl(218, 28%, 13%);
+  padding-top: 100px;
+  padding-bottom: 300px;
+  position: relative;
+
+  @include responsive(tablet) {
+    padding-bottom: 190px;
+  }
+  @include responsive(tablet) {
+    padding-bottom: 310px;
+  }
+}

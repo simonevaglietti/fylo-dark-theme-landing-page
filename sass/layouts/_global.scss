@@ -8,19 +8,26 @@ body {
   color: rgb(236, 236, 236);
 }
 
-.bg-desktop {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  z-index: 0;
-}
-
-.bg-mobile {
-  display: none;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  z-index: 0;
+#background {
+  .bg-desktop {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+    @include responsive(phone) {
+      display: none;
+    }
+  }
+  .bg-mobile {
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    @include responsive(phone) {
+      display: block;
+    }
+  }
 }
 
 .title {

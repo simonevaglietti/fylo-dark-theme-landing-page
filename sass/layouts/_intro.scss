@@ -1,0 +1,54 @@
+#intro-content {
+  position: relative;
+}
+
+#intro {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  .intro-illustration {
+    margin: 30px 0 40px;
+    width: 500px;
+    @include responsive(tablet) {
+      width: 450px;
+    }
+    @include responsive(phone) {
+      width: 340px;
+    }
+    @include responsive(small-phone) {
+      width: 300px;
+    }
+  }
+  .title {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    @include responsive(tablet) {
+      padding: 0 10px;
+    }
+    @include responsive(phone) {
+      font-size: 30px;
+      padding: 0 7px;
+    }
+    @include responsive(small-phone) {
+      margin: 0 7px 25px;
+    }
+  }
+  .paragraph {
+    max-width: 500px;
+    margin: 0 auto;
+    @include responsive(tablet) {
+      padding: 0 15px;
+    }
+    @include responsive(phone) {
+      font-size: 15px;
+      padding: 0 30px;
+    }
+  }
+  .primary-btn {
+    width: 200px;
+    height: 40px;
+    margin: 26px auto 0;
+  }
+}

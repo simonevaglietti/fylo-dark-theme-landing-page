@@ -3,6 +3,14 @@
   margin: 150px 60px 0;
   display: flex;
   justify-content: space-between;
+  @include responsive(tablet) {
+    flex-direction: column;
+    margin: 130px 60px;
+  }
+  @include responsive(phone) {
+    margin: 110px 60px;
+  }
+
   .quotes {
     position: absolute;
     top: -40px;
@@ -14,6 +22,9 @@
     z-index: 1;
     margin: 0 13px;
     background: hsl(219, 30%, 18%);
+    @include responsive(tablet) {
+      margin: 15px 0;
+    }
     .paragraph {
       font-size: 14px;
       padding: 30px 20px 15px;

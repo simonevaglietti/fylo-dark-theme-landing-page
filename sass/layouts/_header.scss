@@ -1,0 +1,46 @@
+#header {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+  padding: 10px 20px;
+  align-items: center;
+  @include responsive(phone) {
+    margin: 20px 2px;
+  }
+  @include responsive(small-phone) {
+    padding: 10px 15px;
+  }
+  .header-logo {
+    @include responsive(phone) {
+      height: 31px;
+      width: 140px;
+    }
+    @include responsive(small-phone) {
+      width: 130px;
+    }
+    g {
+      @include responsive(phone) {
+        transform: scale(0.6);
+      }
+    }
+  }
+  .navbar {
+    width: 200px;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        @include responsive(small-tablet) {
+          margin: 0 2px;
+        }
+        a {
+          @include responsive(small-phone) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

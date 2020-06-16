@@ -7,6 +7,14 @@
   grid-gap: 40px;
   margin-bottom: 100px;
 
+  @include responsive(tablet) {
+    grid-template-columns: 370px;
+  }
+
+  @include responsive(phone) {
+    grid-template-columns: 280px;
+  }
+
   .info-box {
     display: grid;
     grid-template-rows: 95px 27px 75px;
